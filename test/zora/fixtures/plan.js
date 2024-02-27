@@ -1,4 +1,4 @@
-const test = require('../../../index').test
+import { test } from '../../../src/index.js'
 
 test('Plan the correct number of tests', t => {
     t.plan(2)

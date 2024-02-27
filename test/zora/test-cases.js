@@ -1,21 +1,10 @@
-'use strict'
-
 import test from '@pre-bundled/tape'
 import fs from 'fs'
 import path from 'path'
 import childProcess from 'child_process'
 import util from 'util'
-import jsdiff from 'diff'
+import { Diff as jsdiff } from 'diff'
 import { strip } from '../util.js'
-
-// const test = require('@pre-bundled/tape')
-// const fs = require('fs')
-// const path = require('path')
-// const childProcess = require('child_process')
-// const util = require('util')
-// const jsdiff = require('diff')
-
-const { strip } = require('../util')
 
 const readFile = util.promisify(fs.readFile)
 
